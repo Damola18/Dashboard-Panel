@@ -53,7 +53,7 @@ export default function Dashboard ()  {
                             <Col className="sm-6 text-right">
                                 <div>
                                     <Button onClick={() => navigate('/addUser')}>
-                                   ➕ Add New
+                                    Add New
                                     </Button>
                                 </div>
                             </Col>
@@ -61,7 +61,7 @@ export default function Dashboard ()  {
                     </div>
                     </Card.Body>
                     
-                    <Table striped hover>
+                    <Table striped hover responsive>
                         <thead>
                             <tr>
                             <th>ID</th>
