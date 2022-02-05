@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './views/Home';
 import AddUser from './views/AddUser';
 import EditUser from './views/EditUser';
-import './index.css'
-import Modal from './components/DeleteModal';
-
 
 export default function App() {
   return (

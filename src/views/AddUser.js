@@ -1,15 +1,10 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { Form, FormGroup } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import {ButtonGroup} from 'react-bootstrap';
 import { addUser } from "../redux/actions";
-
-
-const styles = {
-    
-};
 
 const AddUser = () => {
     const [state, setState] = useState({

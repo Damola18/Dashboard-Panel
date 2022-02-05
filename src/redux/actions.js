@@ -1,5 +1,4 @@
 import * as types from "./actionTypes";
-import { TEST_API_URL } from "../config";
 import axios from 'axios';
 
 const getUsers = (users) => ({
