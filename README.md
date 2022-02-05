@@ -1,4 +1,4 @@
-# React  Application 🔥
+# React  Application 🎆
 An Administration panel / dashboard for user management built on React and Redux
 
 
