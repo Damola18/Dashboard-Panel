@@ -1,0 +1,1 @@
+export const TEST_API_URL = "https://my-json-server.typicode.com/karolkproexe/jsonplaceholderdb/data";

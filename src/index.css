@@ -1,13 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500;1,600&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* preloader css */
+.cssfx-hypnosis-loader {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+}
+
+.cssfx-hypnosis-outer,
+.cssfx-hypnosis-middle,
+.cssfx-hypnosis-inner {
+  border: 3px solid transparent;
+  border-top-color: var(--color);
+  border-right-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.cssfx-hypnosis-outer {
+  width: var(--width);
+  height: var(--height);
+  animation: cssfx-hypnosis-rotate var(--duration) linear infinite;
+}
+
+.cssfx-hypnosis-middle {
+  width: calc(var(--width) * 0.6);
+  height: calc(var(--height) * 0.6);
+  animation: cssfx-hypnosis-rotate calc(var(--duration) * 7 / 8) linear reverse
+    infinite;
+}
+
+.cssfx-hypnosis-inner {
+  width: calc(var(--width) * 0.8 / 3.5);
+  height: calc(var(--height) * 0.8 / 3.5);
+  animation: cssfx-hypnosis-rotate calc(var(--duration) * 3 / 4) linear infinite;
+}
+
+@keyframes cssfx-hypnosis-rotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
